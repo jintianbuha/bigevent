@@ -21,5 +21,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    outDir: 'dist', // 输出目录
+    rollupOptions: {
+      input: '/src/main.js' //入口文件
+    }
   }
 })
