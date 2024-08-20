@@ -16,7 +16,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()]
     })
   ],
-  base: '/bigevent/',
+  base: './bigevent/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -25,7 +25,7 @@ export default defineConfig({
   build: {
     outDir: 'dist', // 输出目录
     rollupOptions: {
-      input: '/src/main.js' //入口文件
+      input: './src/main.js' //入口文件
     }
   }
 })
